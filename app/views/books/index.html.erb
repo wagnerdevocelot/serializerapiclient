@@ -1,0 +1,21 @@
+
+<table>
+    <thead>
+        <tr>
+            <td>Nome</td>
+            <td>ISBN</td>
+            <td>Categoria</td>
+            <td>Professor</td>
+        </tr>
+    </thead>
+    <tbody>
+    <% @books.each do |book| %>
+        <tr>
+            <td><%= book[:name] %></td>
+            <td><%= book[:isbn] %></td>
+            <td><%= book[:kind] %></td>
+            <td><%= book[:teacher] %></td>
+        </tr>    
+    <% end %>
+    </tbody>
+</table>
